@@ -1,15 +1,7 @@
-﻿import { BrowserRouter } from "react-router-dom"
-import AppRoutes from "./components/AppRoutes"
-import { AuthProvider } from "./contexts/AuthContext"
+﻿import FarmDashboard from "./components/FarmDashboard"
 
 function App() {
-  return (
-    <BrowserRouter>
-      <AuthProvider>
-        <AppRoutes />
-      </AuthProvider>
-    </BrowserRouter>
-  )
+  return <FarmDashboard />
 }
 
 export default App

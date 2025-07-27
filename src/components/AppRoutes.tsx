@@ -1,9 +1,10 @@
-﻿import { Routes, Route } from "react-router-dom"
+﻿import * as React from "react"
+import { Routes, Route } from "react-router-dom"
 import Dashboard from "./Dashboard"
 import Crops from "./Crops"
 import Weather from "./Weather"
 
-export default function AppRoutes() {
+const AppRoutes: React.FC = () => {
   return (
     <Routes>
       <Route path="/" element={<Dashboard />} />
@@ -12,3 +13,5 @@ export default function AppRoutes() {
     </Routes>
   )
 }
+
+export default AppRoutes
